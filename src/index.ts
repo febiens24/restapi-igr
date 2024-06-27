@@ -1,9 +1,5 @@
 // console.log('hallo dunia baru')
-import express, {
-  type Request,
-  type Application,
-  type NextFunction
-} from 'express'
+import express, { type Application } from 'express'
 import 'dotenv/config'
 
 const app: Application = express()
