@@ -7,5 +7,5 @@ const port: number =
   process.env.PORT != null ? parseInt(process.env.PORT) : 3000
 
 app.listen(port, () => {
-  console.log(`Porto IGR listerning on http://localhost:${port}`)
+  console.log(`Restapi IGR listerning on http://localhost:${port}`)
 })
