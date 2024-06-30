@@ -6,8 +6,9 @@ const app: Application = express()
 const port: number =
   process.env.PORT != null ? parseInt(process.env.PORT) : 3000
 
-app.use(appMiddleware)
+app.use(appMiddlewar)
 
-app.listen(port, () => { console.log(`Restapi IGR listerning on http://localhost:${port}`)
+app.listen(port, () => {
+  console.log(`Restapi IGR listerning on http://localhost:${port}`)
 })
 export default app
