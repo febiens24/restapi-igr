@@ -6,7 +6,6 @@ export const getAllProddcuts = (
   next: NextFunction
 ): any => {
   try {
-    // res.status(200).json({ message: 'Products' })
     const data = [
       {
         id: 1,
