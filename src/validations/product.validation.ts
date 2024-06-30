@@ -1,5 +1,5 @@
-import joi, { string } from 'joi'
-import type ProductType from '../types/product.type'
+import joi from 'joi'
+import ProductType from '../types/product.type'
 
 export const inputProductValidation = (
   payload: ProductType

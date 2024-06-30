@@ -1,4 +1,4 @@
-import express, { Application } from 'express'
+import express, { type Application } from 'express'
 import 'dotenv/config'
 import appMiddleware from './middleware'
 

@@ -1,5 +1,4 @@
-import { type Request, type Response, Router } from 'express'
-import { inputProductValidation } from '../validations/product.validation'
+import { Router } from 'express'
 import {
   getAllProddcuts,
   insertProduct

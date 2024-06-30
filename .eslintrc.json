@@ -11,5 +11,7 @@
     "sourceType": "module"
   },
   "ignorePatterns": ["**/build/**", "**/node_modules/**", "**/public/*"],
-  "rules": {}
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off"
+  }
 }
