@@ -1,4 +1,4 @@
-import { type NextFunction, type Request, type Response } from 'express'
+import { type NextFunction, Request, type Response } from 'express'
 import { inputProductValidation } from '../validations/product.validation'
 export const getAllProddcuts = (
   req: Request,
