@@ -1,42 +1,18 @@
 import { type NextFunction, type Request, type Response } from 'express'
 import { inputProductValidation } from '../validations/product.validation'
-export const getAllProddcuts = (
+import { query } from '../db/index'
+export const getAllProddcuts = async (
+  
   req: Request,
   res: Response,
   next: NextFunction
-): any => {
+): Promise<any> => {
   try {
-    const data = [
-      {
-        id: 1,
-        name: 'keyboard',
-        qty: 90
-      },
-      {
-        id: 1,
-        name: 'keyboard',
-        qty: 90
-      },
-      {
-        id: 1,
-        name: 'keyboard',
-        qty: 90
-      },
-      {
-        id: 1,
-        name: 'keyboard',
-        qty: 90
-      },
-      {
-        id: 1,
-        name: 'keyboard',
-        qty: 90
-      }
-    ]
+    const products = await query('SELECT * from res_users')
     return res.status(200).json({
       error: null,
       message: 'success',
-      data: data
+      data: products.rows
     })
   } catch (error: Error | any) {
     next(new Error('Error /controller/product.controller.ts :' + error.message))
