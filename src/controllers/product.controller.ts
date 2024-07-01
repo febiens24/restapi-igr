@@ -1,8 +1,8 @@
 import { type NextFunction, type Request, type Response } from 'express'
 import { inputProductValidation } from '../validations/product.validation'
 import { query } from '../db/index'
+
 export const getAllProddcuts = async (
-  
   req: Request,
   res: Response,
   next: NextFunction
