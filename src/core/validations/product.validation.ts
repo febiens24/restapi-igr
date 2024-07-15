@@ -1,5 +1,6 @@
 import joi from 'joi'
-import ProductType from '../types/product.type'
+import ProductType from '../../types/product.type'
+// import ProductType from '../types/product.type'
 
 export const inputProductValidation = (
   payload: ProductType

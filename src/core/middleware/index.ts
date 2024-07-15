@@ -1,6 +1,7 @@
 import express from 'express'
 import cors from 'cors'
-import app from '../routes'
+import app from '../../routes'
+// import app from '../routes'
 
 const appMiddleware = express()
 

@@ -1,6 +1,6 @@
 import { type NextFunction, type Request, type Response } from 'express'
-import { inputProductValidation } from '../validations/product.validation'
-import { query } from '../db/index'
+import { inputProductValidation } from '../core/validations/product.validation'
+import { query } from '../core/db/index'
 
 export const getAllProddcuts = async (
   req: Request,
@@ -24,21 +24,21 @@ export const insertProduct = (
   res: Response,
   next: NextFunction
 ): any => {
-  try {
-    const { error, value } = inputProductValidation(req.body)
-    if (error != null) {
-      return res.status(400).json({
-        error: error.details[0].message,
-        message: 'Input Product Failure',
-        data: value
-      })
-    }
-    res.status(200).json({
-      error: null,
-      message: 'Input Product Success',
-      data: value
-    })
-  } catch (error: Error | any) {
-    next(new Error('Error /controller/product.controller.ts :' + error.message))
-  }
+  // try {
+  //   const { error, value } = inputProductValidation(req.body)
+  //   if (error != null) {
+  //     return res.status(400).json({
+  //       error: error.details[0].message,
+  //       message: 'Input Product Failure',
+  //       data: value
+  //     })
+  //   }
+  //   res.status(200).json({
+  //     error: null,
+  //     message: 'Input Product Success',
+  //     data: value
+  //   })
+  // } catch (error: Error | any) {
+  //   next(new Error('Error /controller/product.controller.ts :' + error.message))
+  // }
 }

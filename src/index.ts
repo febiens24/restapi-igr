@@ -1,6 +1,6 @@
 import express, { type Application } from 'express'
 import 'dotenv/config'
-import appMiddleware from './middleware'
+import appMiddleware from './core/middleware'
 
 const app: Application = express()
 const port: number =
