@@ -1,7 +1,7 @@
 import { Request, Response } from 'express'
 import { inject, injectable } from 'inversify'
 import { ProductController } from '../controller/ProductController'
-import { TYPES } from '@core/injector/identifier';
+import { TYPES } from '@core/injector/identifier'
 
 @injectable()
 export class ProductAdapter {

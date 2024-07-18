@@ -4,7 +4,7 @@ import { match } from 'fp-ts/Either'
 import { GetProducts } from '../../application/usecases/GetAllProduct'
 import { Injector } from '../../../../core/injector/injector'
 import { AppError } from '../../../../core/error/AppError'
-import { TYPES } from '@core/injector/identifier';
+import { TYPES } from '@core/injector/identifier'
 
 @injectable()
 export class ProductController {
