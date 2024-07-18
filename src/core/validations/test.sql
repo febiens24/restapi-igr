@@ -1,29 +1,30 @@
 src/
-├── Core/
+├── utils/
+│   └── winston.ts
+├── core/
 │   └── error/
 │           └── Error.ts
+│   └── injector/
+│           └── injector.ts
+│   └── validation/
+│           └── product.validation.ts
+│   └── middleware/
+│           └── index.ts
 ├── modules/
 │   └── product/
-│       └── domain/
+│       └── aplication/
 │           └── usecases/
 │               └── GetProducts.ts
 │               └── InsertProduct.ts
 │           └── repository/
 │               └── ProductRepository.ts
 │           └── entities/
-│               └── Productr.ts
-│       └── data/
-│           └── Controller/
+│               └── Product.ts
+│       └── infratructure/
+│           └── controller/
 │               └── ProductController.ts
 │           └── repository/
 │               └── ProductRepositoryImpl.ts
-│           └── queries/
-│               └── ProductQuery.ts
-│       └── routes/
-│           └── product.route.ts
-├── app.ts
-├── server.ts
-├── di/
-│   └── container.ts
-├── types/
-│   └── custom.d.ts
+│       └── adapter/
+│           └── ProductAdapter.ts
+├── index.ts

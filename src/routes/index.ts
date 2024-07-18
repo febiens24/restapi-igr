@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import productRouter from './product.route'
+import productRouter from '../modules/product/routes/product.route';
 
 const app = Router()
 
