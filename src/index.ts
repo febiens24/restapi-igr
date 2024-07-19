@@ -4,7 +4,7 @@ import appMiddleware from './middleware'
 
 const app: Application = express()
 const port: number =
-  process.env.PORT != null ? parseInt(process.env.PORT) : 3000
+  process.env.PORT != null ? parseInt(process.env.PORT) : 3008
 
 app.use(appMiddleware)
 
